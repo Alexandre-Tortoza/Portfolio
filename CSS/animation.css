@@ -1,0 +1,53 @@
+:root{
+
+    --color01:#0D0D0D;
+    --color02:#404040;
+    --color03:#737373;
+    --color04:#BFBFBF;
+    --color05:#F2F2F2;
+
+    --font01:'IBM Plex Mono', monospace;
+}
+
+
+.typeW{
+position: relative;
+max-width: 7.2rem;
+}
+
+
+.typeW::after,.typeW::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.typeW::before{
+    background-color: var(--color05);
+    animation: 
+    typeW 2s steps(10) forwards;
+}
+
+.typeW::after{
+    width: 0.120em;
+    background-color: var(--color01);
+    animation: 
+    typeW 2s steps(10) forwards,
+    blink 1s infinite;
+
+}
+
+@keyframes typeW{
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+
+    to{
+        background: transparent;
+    }
+}

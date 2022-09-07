@@ -162,9 +162,6 @@ font-size: .9rem;    }
     font-family: var(--font01);
     padding: 1rem;
 }
-
-/* TESTES */
-
 .habComp{
     text-align: center;
     margin: 2rem;
@@ -194,4 +191,12 @@ font-size: .9rem;    }
         font-size: 1.5rem;
     }
 
+}
+/*Shadows*/
+.content__img img{
+    box-shadow: 5px 5px 15px var(--color02);
+}
+
+.projetos{
+    box-shadow: 1px 1px 5px 5px var(--color05);
 }
