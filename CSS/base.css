@@ -22,14 +22,55 @@ body{
 }
 
 .window__myName{
-    margin-top: ;
     text-align: center;
     letter-spacing:3rem ;
     font-size: 2rem;
 }
+.window__line{
+    content: "";
+    background-color: var(--color05);
+    width: 97.5%;
+    position: absolute;
+    left: 17px;
+    height: 5px;
+    position: absolute;
+    pad: 10rem;
+}
 
+#space{
+    padding-bottom: 2rem;
+}
 
 
 @media (max-width: 768px) {
-    
+    .window__line{
+        width: 90.5%;
+    }
+    .window__myName{
+        letter-spacing:1rem ;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* TESTES */
+
+div.window span ul *{
+    display: inline-block;
+    margin-right: 10px;
+    left: 2rem;
+    content: "a";
+    border: 7px solid var(--color05);
+    background-color: 0;
+    border-radius: 100%;
+}
+div.window span ul{
+    position: absolute;
+    top:1.6rem;
 }
