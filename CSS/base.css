@@ -6,7 +6,11 @@
     --color04:#BFBFBF;
     --color05:#F2F2F2;
 
+    --font01:'IBM Plex Mono', monospace;
+
 }
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 
 body{
     background-color: var(--color01);
@@ -14,21 +18,23 @@ body{
 }
 
 .window{
-    border: 5px solid var(--color05);
+    border: 5px solid var(--color02);
     border-radius: 20px;
     margin: 1rem;
     padding: 1.5rem;
     min-height: 50vh;
+    background-color: var(--color05);
 }
 
 .window__myName{
     text-align: center;
     letter-spacing:3rem ;
     font-size: 2rem;
+    color: #0D0D0D;
 }
 .window__line{
     content: "";
-    background-color: var(--color05);
+    background-color: var(--color02);
     width: 97.5%;
     position: absolute;
     left: 17px;
@@ -51,26 +57,79 @@ body{
         font-size: 1rem;
     }
 }
-
-
-
-
-
-
-
-
-/* TESTES */
-
 div.window span ul *{
     display: inline-block;
     margin-right: 10px;
     left: 2rem;
     content: "a";
-    border: 7px solid var(--color05);
+    border: 7px solid var(--color02);
     background-color: 0;
     border-radius: 100%;
 }
 div.window span ul{
     position: absolute;
     top:1.6rem;
+}
+
+
+
+/* TESTES */
+
+.window__content{
+    
+    display: flex;
+    justify-content: center;
+
+}
+.window__content * {
+    
+    margin:1rem;
+    
+}
+.content__img *{
+    max-width: 20vw;
+    border-radius: 10%;
+}
+.content__text{
+    color: var(--color01);
+    font-size: 1.5rem;
+    font-family: var(--font01);
+}
+
+
+#spc1{
+    margin-left:7rem ;
+}
+#spc2{
+    margin-left:22rem ;
+}
+
+@media (max-width: 768px){
+    .content__text{
+    color: var(--color01);
+    font-size: 1rem;
+    font-family: var(--font01);
+}
+    #spc1{
+        margin-left:0rem ;
+    }
+    #spc2{
+        margin-left:0rem ;
+    }
+    .window__content{
+        flex-wrap: wrap;
+    }
+    .window__content *{
+font-size: .9rem;    }
+.content__img img{
+ max-width: 10rem;
+}
+}
+
+#sobremim{
+    font-size: 1rem;
+}
+#sobremim h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
