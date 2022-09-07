@@ -134,12 +134,12 @@ font-size: .9rem;    }
     text-transform: uppercase;
 }
 
-/* TESTES */
 
 .projetos{
     background-color: var(--color05);
     color: var(--color01);
     margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .projetos h2{
@@ -161,4 +161,37 @@ font-size: .9rem;    }
     color: #0D0D0D;
     font-family: var(--font01);
     padding: 1rem;
+}
+
+/* TESTES */
+
+.habComp{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: var(--font01);
+    padding-bottom: 3rem;
+    color: var(--color02);
+}
+
+.habComp div h3{
+    padding: 1rem;
+    color: var(--color05);
+}
+.habComp div {
+    font-size: 1.5REM;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: underline;
+}
+
+@media(max-width: 768px){
+    #bar{
+        display: none;
+    }
+    .habComp h2{
+        font-size: 1.5rem;
+    }
+
 }
