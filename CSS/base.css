@@ -73,7 +73,7 @@ div.window span ul{
 
 
 
-/* TESTES */
+
 
 .window__content{
     
@@ -122,7 +122,7 @@ div.window span ul{
     .window__content *{
 font-size: .9rem;    }
 .content__img img{
- max-width: 10rem;
+    max-width: 10rem;
 }
 }
 
@@ -132,4 +132,33 @@ font-size: .9rem;    }
 #sobremim h2{
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+/* TESTES */
+
+.projetos{
+    background-color: var(--color05);
+    color: var(--color01);
+    margin-top: 3rem;
+}
+
+.projetos h2{
+    font-size: 3rem;
+    font-family: var(--font01);
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.projetos__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projetos__links *{
+    text-align: center;
+    text-decoration: none;
+    color: #0D0D0D;
+    font-family: var(--font01);
+    padding: 1rem;
 }
