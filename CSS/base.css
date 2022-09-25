@@ -200,3 +200,52 @@ font-size: .9rem;    }
 .projetos{
     box-shadow: 1px 1px 5px 5px var(--color05);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.links {
+    padding: 2rem;
+    text-align: center;
+}
+.links a{
+    color: var(--color05);
+    font-family: var(--font01);
+    font-size: 1.8rem;
+    margin: 1rem;
+    text-decoration: none;
+    transition: 1s;
+}
+.links a:hover{
+    border-bottom: var(--color05) solid 5px;
+    transition-property: all;
+
+}
